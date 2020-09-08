@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
-
+/*asd*/
 export default function App() {
     return (
         <NavigationContainer>
