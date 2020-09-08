@@ -10,7 +10,7 @@ export default class DetailsScreen extends Component {
                     title="Go to CBS... again"
                     onPress={() => this.props.navigation.push('CBS')}
                 />
-                <Button title="Go to Home" onPress={() => this.props.navigation.navigate('Home')} />
+                <Button title="Go to home" onPress={() => this.props.navigation.navigate('Home')} />
             </View>
         );
     }
