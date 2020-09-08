@@ -1,9 +1,5 @@
 import React,{ Component } from 'react'
 import { Button, View, Text } from 'react-native';
-import {createStackNavigator} from "@react-navigation/stack";
-import {useNavigation} from "@react-navigation/native";
-
-
 
 export default class DetailsScreen extends Component {
     render() {
