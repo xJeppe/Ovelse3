@@ -7,8 +7,8 @@ export default class DetailsScreen extends Component {
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Details Screen</Text>
                 <Button
-                    title="Go to CBS"
-                    onPress={() => this.props.navigation.push('CBS')}
+                    title="Go to Updates"
+                    onPress={() => this.props.navigation.push('Updates')}
                 />
                 <Button title="Go to home"
                         onPress={() => this.props.navigation.navigate('Home')} />
