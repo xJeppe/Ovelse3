@@ -7,7 +7,7 @@ export default class CbsScreen extends Component {
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text>CBS!</Text>
                 <Button
-                    title="Go to back to Details"
+                    title="Go To Details"
                     onPress={() => this.props.navigation.goBack()}
                 />
             </View>
