@@ -1,19 +1,23 @@
 import React,{ Component } from 'react'
 import HomeScreen from "./HomeScreen";
-import SettingsScreen from "./SettingsScreen";
+import CameraScreen from "./CameraScreen";
 import Topnavigation from "./TopNavigation"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
-export default class MyTabs extends Component {
+ /*BottomTabNavigator*/
+export default class BottomNavigation extends Component {
     render() {
         return (
+           /*BottomTabNavigator oprettes med 3 ruter. Home rute som startside.*/
             <Tab.Navigator
                 initialRouteName="Home"
       tabBarOptions={{
-        activeTintColor: '#e91e63',
+        activeTintColor: "beige",
+        inactiveBackgroundColor: "black",
+        activeBackgroundColor: "black"
       }}
       >
             <Tab.Screen name="Home" component={HomeScreen}
@@ -24,18 +28,18 @@ export default class MyTabs extends Component {
                 ),
               }} />
 
-            <Tab.Screen name="Settings" component={SettingsScreen}
+            <Tab.Screen name="Camera" component={CameraScreen}
              options={{
-                tabBarLabel: 'Settings',
+                tabBarLabel: 'Camera',
                 tabBarIcon: ({ color, size }) => (
-                  <MaterialCommunityIcons name="settings" color={color} size={size} />
+                  <MaterialCommunityIcons name="camera" color={color} size={size} />
                 ),
               }} />
-            <Tab.Screen name="Details" component={Topnavigation}
+            <Tab.Screen name="Photos" component={Topnavigation}
              options={{
-                tabBarLabel: 'Details',
+                tabBarLabel: 'Photos',
                 tabBarIcon: ({ color, size }) => (
-                  <MaterialCommunityIcons name="information" color={color} size={size}/>
+                  <MaterialCommunityIcons name="image" color={color} size={size}/>
             
                 ),
             }} />
